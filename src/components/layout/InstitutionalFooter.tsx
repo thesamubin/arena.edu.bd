@@ -119,7 +119,7 @@ export function InstitutionalFooter() {
             <ul className="space-y-2 text-xs">
               <li>
                 <Link
-                  href="/corporate"
+                  href="/training/corporate"
                   className="hover:text-white hover:underline underline-offset-2 transition-colors"
                 >
                   Corporate & Financial Sector Upskilling
@@ -127,7 +127,7 @@ export function InstitutionalFooter() {
               </li>
               <li>
                 <Link
-                  href="/government"
+                  href="/training/government"
                   className="hover:text-white hover:underline underline-offset-2 transition-colors"
                 >
                   Government & Public Sector Training
@@ -135,18 +135,18 @@ export function InstitutionalFooter() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/partners"
                   className="hover:text-white hover:underline underline-offset-2 transition-colors"
                 >
-                  Vulnerability Assessment & Penetration Testing (VAPT)
+                  Institutional Partners & Engagements
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/research"
+                  href="/student-work"
                   className="hover:text-white hover:underline underline-offset-2 transition-colors"
                 >
-                  Security Advisories & Research Bulletins
+                  Student Projects & Vulnerability Research
                 </Link>
               </li>
               <li>
@@ -159,10 +159,10 @@ export function InstitutionalFooter() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/leadership"
                   className="hover:text-white hover:underline underline-offset-2 transition-colors"
                 >
-                  Institutional Profile & Ethics Charter
+                  Leadership & Governance
                 </Link>
               </li>
             </ul>

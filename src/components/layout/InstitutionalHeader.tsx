@@ -9,12 +9,43 @@ import { MobileDrawer } from "./MobileDrawer";
 import { VERIFICATION_PORTAL_URL } from "@/lib/contact";
 
 const navigationItems = [
-  { label: "Academics", href: "/academics" },
-  { label: "Corporate", href: "/corporate" },
-  { label: "Government", href: "/government" },
-  { label: "Faculty", href: "/faculty" },
-  { label: "Research", href: "/research" },
-  { label: "About", href: "/about" },
+  {
+    label: "Academics",
+    href: "/academics",
+    subItems: [
+      { label: "Diploma in Cyber Security", href: "/academics/diploma-cyber-security" },
+      { label: "Short Courses", href: "/academics/courses" },
+      { label: "Certifications", href: "/academics/certifications" },
+      { label: "Admissions", href: "/academics/admissions" },
+    ]
+  },
+  {
+    label: "Training",
+    href: "/training",
+    subItems: [
+      { label: "Corporate Training", href: "/training/corporate" },
+      { label: "Government & Defense", href: "/training/government" },
+      { label: "Request Inquiry", href: "/training/request" },
+    ]
+  },
+  {
+    label: "Community",
+    href: "/students",
+    subItems: [
+      { label: "Our Students", href: "/students" },
+      { label: "Student Work", href: "/student-work" },
+    ]
+  },
+  {
+    label: "Institution",
+    href: "/about",
+    subItems: [
+      { label: "About Profile", href: "/about" },
+      { label: "Leadership", href: "/leadership" },
+      { label: "Faculty", href: "/faculty" },
+      { label: "Partners", href: "/partners" },
+    ]
+  },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -44,13 +75,29 @@ export function InstitutionalHeader() {
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-1 xl:gap-2 font-sans text-sm font-medium">
             {navigationItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="px-3 py-2 rounded-sm text-academic-ink-primary hover:text-academic-blue hover:bg-academic-grey/60 transition-colors"
-              >
-                {item.label}
-              </Link>
+              <div key={item.label} className="relative group">
+                <Link
+                  href={item.href}
+                  className="px-3 py-2 rounded-sm text-academic-ink-primary hover:text-academic-blue hover:bg-academic-grey/60 transition-colors inline-block"
+                >
+                  {item.label}
+                </Link>
+                {item.subItems && (
+                  <div className="absolute top-full left-0 mt-0 w-56 bg-white border border-academic-grey-border rounded-sm shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                    <div className="py-2">
+                      {item.subItems.map((sub) => (
+                        <Link
+                          key={sub.label}
+                          href={sub.href}
+                          className="block px-4 py-2 text-sm text-academic-ink-secondary hover:text-academic-blue hover:bg-academic-grey transition-colors"
+                        >
+                          {sub.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
           </nav>
 

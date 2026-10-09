@@ -16,15 +16,35 @@ export interface MobileDrawerProps {
   onClose: () => void;
 }
 
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Academic Programs", href: "/academics" },
-  { label: "Corporate Training", href: "/corporate" },
-  { label: "Government & Defense", href: "/government" },
-  { label: "Faculty Registry", href: "/faculty" },
-  { label: "Research & Advisories", href: "/research" },
-  { label: "About Institute", href: "/about" },
-  { label: "Admissions & Contact", href: "/contact" },
+const navSections = [
+  {
+    title: "Academics",
+    links: [
+      { label: "Academic Programs", href: "/academics" },
+      { label: "Diploma in Cyber Security", href: "/academics/diploma-cyber-security" },
+      { label: "Short Courses", href: "/academics/courses" },
+      { label: "Certifications", href: "/academics/certifications" },
+    ]
+  },
+  {
+    title: "Institutional Training",
+    links: [
+      { label: "Corporate Training", href: "/training/corporate" },
+      { label: "Government & Defense", href: "/training/government" },
+      { label: "Request Inquiry", href: "/training/request" },
+    ]
+  },
+  {
+    title: "Institution & Community",
+    links: [
+      { label: "About Us", href: "/about" },
+      { label: "Leadership", href: "/leadership" },
+      { label: "Faculty Registry", href: "/faculty" },
+      { label: "Student Work", href: "/student-work" },
+      { label: "Partners & Engagements", href: "/partners" },
+      { label: "Contact", href: "/contact" },
+    ]
+  }
 ];
 
 export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
@@ -89,19 +109,24 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
         </div>
 
         {/* Navigation list */}
-        <nav className="flex-1 overflow-y-auto px-6 py-6 space-y-1 font-sans">
-          <p className="text-[11px] font-semibold uppercase tracking-wider text-academic-ink-muted mb-2 px-3">
-            Academic Navigation
-          </p>
-          {navLinks.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              onClick={onClose}
-              className="flex items-center justify-between px-3 py-2.5 rounded-sm text-sm font-medium text-academic-navy hover:bg-academic-grey hover:text-academic-blue transition-colors"
-            >
-              <span>{item.label}</span>
-            </Link>
+        <nav className="flex-1 overflow-y-auto px-6 py-6 space-y-6 font-sans">
+          
+          {navSections.map((section, idx) => (
+            <div key={idx} className="space-y-1">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-academic-ink-muted mb-2 px-3">
+                {section.title}
+              </p>
+              {section.links.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={onClose}
+                  className="flex items-center justify-between px-3 py-2.5 rounded-sm text-sm font-medium text-academic-navy hover:bg-academic-grey hover:text-academic-blue transition-colors"
+                >
+                  <span>{item.label}</span>
+                </Link>
+              ))}
+            </div>
           ))}
 
           <div className="pt-4 border-t border-academic-grey-border mt-4">
