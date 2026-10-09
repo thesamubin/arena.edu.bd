@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col font-sans bg-academic-warm text-academic-ink-primary antialiased">
-        <InstitutionalTopBar />
+        {/* InstitutionalTopBar removed to clean up the header area */}
         <AnnouncementBar />
         <InstitutionalHeader />
         <main className="flex-1">{children}</main>
