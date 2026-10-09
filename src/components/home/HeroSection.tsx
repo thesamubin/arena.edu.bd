@@ -90,9 +90,8 @@ export function HeroSection() {
               <span>Explore the Diploma</span>
             </Button>
           </div>
-          
           {/* Scroll Indicator */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-[bounce_2s_infinite_1s] hidden sm:flex text-white/40">
+          <div className="mt-12 flex justify-center animate-[bounce_2s_infinite_1s] hidden sm:flex text-white/40">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M12 5v14M19 12l-7 7-7-7"/>
             </svg>

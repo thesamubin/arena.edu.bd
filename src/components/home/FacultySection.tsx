@@ -45,43 +45,38 @@ export function FacultySection() {
             </div>
           </div>
 
-          <div className="lg:w-2/3 space-y-12 mt-8 lg:mt-0 relative z-10">
+          <div className="lg:w-2/3 space-y-6 mt-8 lg:mt-0 relative z-10">
             {VERIFIED_FACULTY.map((faculty, idx) => {
-              const initials = faculty.name
-                .split(" ")
-                .map((n) => n[0])
-                .join("")
-                .substring(0, 2);
-
               return (
-                <div key={idx} className="group border-b border-academic-grey-border/60 pb-10 last:border-0 last:pb-0 flex flex-col sm:flex-row gap-6 sm:gap-10">
-                  <div className="shrink-0">
-                    <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-lg bg-academic-grey-border/30 overflow-hidden relative border border-academic-grey-border/60">
-                      {faculty.image ? (
-                        <Image src={faculty.image} alt={faculty.name} fill className="object-cover" />
-                      ) : (
-                        <div className="absolute inset-0 flex items-center justify-center bg-academic-navy text-academic-warm font-serif font-bold text-3xl">
-                          {initials}
-                        </div>
-                      )}
+                <div 
+                  key={idx} 
+                  className="group bg-white rounded-2xl p-6 sm:p-8 border border-academic-grey-border shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_15px_40px_-10px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all duration-300 flex flex-col sm:flex-row gap-6 sm:gap-8 relative overflow-hidden"
+                >
+                  {/* Subtle Accent background on hover */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-academic-navy/5 rounded-bl-[100px] -z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+                  <div className="shrink-0 relative z-10">
+                    <div className="w-20 h-20 sm:w-28 sm:h-28 rounded-2xl bg-academic-grey overflow-hidden relative shadow-sm ring-1 ring-academic-grey-border group-hover:ring-academic-blue/30 transition-all duration-300">
+                      <Image src="/images/faculty/demo_avatar.jpg" alt={faculty.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
                   </div>
                   
-                  <div className="flex-1">
-                    <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-2">
-                      <h3 className="text-xl sm:text-2xl font-serif font-bold text-academic-navy">
-                        {faculty.name}
-                      </h3>
-                      <span className="font-mono text-sm text-academic-ink-muted hidden sm:inline">
+                  <div className="flex-1 relative z-10 flex flex-col">
+                    <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 mb-2">
+                      <div>
+                        <h3 className="text-xl sm:text-2xl font-serif font-bold text-academic-navy mb-1">
+                          {faculty.name}
+                        </h3>
+                        <p className="text-sm font-bold text-academic-blue">
+                          {faculty.role}
+                        </p>
+                      </div>
+                      <span className="inline-flex items-center px-3 py-1 rounded-full text-[11px] font-bold bg-academic-blue/10 text-academic-blue whitespace-nowrap self-start">
                         {faculty.experience}
                       </span>
                     </div>
                     
-                    <p className="text-sm font-semibold text-academic-blue mb-4">
-                      {faculty.role}
-                    </p>
-                    
-                    <p className="text-academic-ink-secondary text-base leading-relaxed mb-6">
+                    <p className="text-academic-ink-secondary text-sm sm:text-base leading-relaxed mb-6 mt-3">
                       {faculty.summary}
                     </p>
 
@@ -89,26 +84,27 @@ export function FacultySection() {
                       {faculty.specializations.map((spec, sIdx) => (
                         <span
                           key={sIdx}
-                          className="px-2.5 py-1 rounded-sm bg-academic-grey text-academic-ink-secondary text-xs font-sans border border-academic-grey-border"
+                          className="px-2.5 py-1 rounded bg-academic-grey text-academic-navy text-[11px] font-bold tracking-wide border border-academic-grey-border group-hover:border-academic-blue/20 transition-colors"
                         >
                           {spec}
                         </span>
                       ))}
                     </div>
 
-                    <Link
-                      href="/faculty"
-                      className="inline-flex items-center gap-1.5 text-sm font-semibold text-academic-blue hover:text-academic-navy transition-colors"
-                    >
-                      <span>Read Bio & Credentials</span>
-                      <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                    </Link>
+                    <div className="mt-auto pt-2">
+                      <Link
+                        href="/faculty"
+                        className="inline-flex items-center gap-2 text-sm font-bold text-academic-navy hover:text-academic-blue transition-colors group/link"
+                      >
+                        <span>Read Bio & Credentials</span>
+                        <ArrowRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               );
             })}
           </div>
-
         </div>
       </Container>
     </Section>

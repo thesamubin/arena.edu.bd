@@ -179,6 +179,62 @@ export const VERIFIED_FACULTY: FacultyProfile[] = [
       "Systems defense instructor focusing on enterprise Linux hardening, server administration security, and automated technical auditing.",
     image: "/images/faculty/bijoy_mondal.jpg",
   },
+  {
+    name: "Syed Sakib Alam Mubin",
+    role: "Faculty Member · Network Security & Cryptography",
+    experience: "7+ Years Experience",
+    specializations: [
+      "Network Protocol Analysis",
+      "Cryptography",
+      "Advanced Malware Analysis",
+      "Threat Hunting",
+    ],
+    summary:
+      "Network security specialist with a focus on cryptographic protocols and advanced persistent threat (APT) analysis.",
+    image: "/images/faculty/syed_sakib_alam_mubin.jpg",
+  },
+  {
+    name: "Roman Moonshi",
+    role: "Faculty Member · Digital Forensics & Incident Response",
+    experience: "8+ Years Experience",
+    specializations: [
+      "Digital Forensics",
+      "Incident Response",
+      "Cyber Crime Investigation",
+      "Memory Forensics",
+    ],
+    summary:
+      "Digital forensics investigator with extensive experience in cybercrime investigation and enterprise incident response strategies.",
+    image: "/images/faculty/roman_moonshi.jpg",
+  },
+  {
+    name: "Sakib Ahmed Sadhin",
+    role: "Faculty Member · Application Security & DevSecOps",
+    experience: "6+ Years Experience",
+    specializations: [
+      "DevSecOps Integration",
+      "Secure Code Review",
+      "API Security",
+      "Container Security",
+    ],
+    summary:
+      "Application security expert focused on integrating security into the CI/CD pipeline and assessing complex enterprise applications.",
+    image: "/images/faculty/sakib_ahmed_sadhin.jpg",
+  },
+  {
+    name: "Md Khaledul Islam",
+    role: "Faculty Member · Cloud Security Architect",
+    experience: "7+ Years Experience",
+    specializations: [
+      "AWS/GCP/Azure Security",
+      "Identity & Access Management",
+      "Cloud Compliance",
+      "Zero Trust Architecture",
+    ],
+    summary:
+      "Cloud security architect specializing in multi-cloud defense mechanisms, zero trust implementations, and compliance frameworks.",
+    image: "/images/faculty/md_khaledul_islam.jpg",
+  },
 ];
 
 export interface InstitutionalEngagement {
