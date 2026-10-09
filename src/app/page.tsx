@@ -1,44 +1,67 @@
-/**
- * arena.edu.bd — Root Homepage
- *
- * Phase 3 placeholder. The production homepage will be implemented in Phase 3.
- * See src/app/_design/page.tsx for the design-system component showcase (non-production).
- */
-
 import type { Metadata } from "next";
-import { Container } from "@/components/ui/Container";
-import { Section } from "@/components/ui/Section";
+import { HeroSection } from "@/components/home/HeroSection";
+import { InstituteIntroSection } from "@/components/home/InstituteIntroSection";
+import { AcademicPathwaysSection } from "@/components/home/AcademicPathwaysSection";
+import { DiplomaSpotlightSection } from "@/components/home/DiplomaSpotlightSection";
+import { OnlineLearningSection } from "@/components/home/OnlineLearningSection";
+import { FacultySection } from "@/components/home/FacultySection";
+import { CorporateGovSection } from "@/components/home/CorporateGovSection";
+import { StudentOutcomesSection } from "@/components/home/StudentOutcomesSection";
+import { InstitutionalExperienceSection } from "@/components/home/InstitutionalExperienceSection";
+import { EducationalResourcesSection } from "@/components/home/EducationalResourcesSection";
+import { FinalCTASection } from "@/components/home/FinalCTASection";
 
 export const metadata: Metadata = {
-  title: "Arena Web Security — Applied Cybersecurity Institute",
+  title: "Arena Web Security — Applied Cybersecurity Institute (arena.edu.bd)",
   description:
-    "Official academic portal of Arena Web Security (arena.edu.bd). Professional diplomas, hands-on penetration testing laboratories, corporate cyber defense, and applied security research.",
+    "Official academic portal of Arena Web Security (arena.edu.bd). Professional Diploma in Cyber Security, hands-on virtual laboratories, offensive security (VAPT), OSINT, and corporate/government defense training.",
+  alternates: {
+    canonical: "https://arena.edu.bd",
+  },
+  openGraph: {
+    title: "Arena Web Security — Applied Cybersecurity Institute",
+    description:
+      "Structured cybersecurity education, hands-on practical laboratories, and verifiable credentials on arena.edu.bd. Founded 2012 in Dhaka, Bangladesh.",
+    url: "https://arena.edu.bd",
+    siteName: "Arena Web Security",
+    locale: "en_US",
+    type: "website",
+  },
 };
 
+/**
+ * Phase 3B Production Homepage - Full Coverage Restored
+ *
+ * Section order:
+ * 1. Optional announcement bar (rendered in layout.tsx above header)
+ * 2. Main navigation (rendered in layout.tsx)
+ * 3. Institutional hero (HeroSection)
+ * 4. Institute introduction (InstituteIntroSection)
+ * 5. Academic pathways (AcademicPathwaysSection)
+ * 6. Professional Diploma spotlight (DiplomaSpotlightSection)
+ * 7. Online learning and practical lab experience (OnlineLearningSection)
+ * 8. Faculty and expertise (FacultySection)
+ * 9. Corporate and government training (CorporateGovSection)
+ * 10. Student projects and verified outcomes (StudentOutcomesSection)
+ * 11. Partners and institutional experience (InstitutionalExperienceSection)
+ * 12. Educational resources (EducationalResourcesSection)
+ * 13. Final CTA (FinalCTASection)
+ * 14. Footer (rendered in layout.tsx)
+ */
 export default function HomePage() {
   return (
-    <Section background="warm" spacing="lg">
-      <Container size="xl">
-        {/* TODO [Phase 3]: Replace with full homepage sections:
-              — InstitutionalHero
-              — TrustBar
-              — FeaturedPrograms
-              — WhyArena
-              — PartnerLogos
-              — AdmissionsCallToAction
-        */}
-        <div className="min-h-[60vh] flex flex-col items-center justify-center text-center space-y-4 py-24">
-          <p className="font-mono text-xs uppercase tracking-widest text-academic-ink-muted">
-            arena.edu.bd · Phase 3 Pending
-          </p>
-          <h1 className="font-serif text-3xl sm:text-4xl font-bold text-academic-navy max-w-2xl">
-            Arena Web Security
-          </h1>
-          <p className="text-sm text-academic-ink-secondary max-w-md leading-relaxed">
-            Applied Cybersecurity Institute. Homepage content will be implemented in Phase 3.
-          </p>
-        </div>
-      </Container>
-    </Section>
+    <>
+      <HeroSection />
+      <InstituteIntroSection />
+      <AcademicPathwaysSection />
+      <DiplomaSpotlightSection />
+      <OnlineLearningSection />
+      <FacultySection />
+      <CorporateGovSection />
+      <StudentOutcomesSection />
+      <InstitutionalExperienceSection />
+      <EducationalResourcesSection />
+      <FinalCTASection />
+    </>
   );
 }

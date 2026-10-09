@@ -26,16 +26,17 @@ export function InstitutionalHeader() {
       <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-academic-grey-border">
         <Container size="xl" className="flex items-center justify-between h-20">
           {/* Institutional Crest / Logo */}
-          <Link href="/" className="flex items-center gap-3.5 group">
-            <div className="w-11 h-11 rounded-sm bg-academic-navy text-academic-warm flex items-center justify-center font-serif font-bold text-xl shadow-academic border border-academic-navy-light/30 transition-transform group-hover:scale-[1.02]">
+          <Link href="/" className="flex items-center gap-2.5 sm:gap-3.5 group min-w-0">
+            <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-sm bg-academic-navy text-academic-warm flex items-center justify-center font-serif font-bold text-lg sm:text-xl shadow-academic border border-academic-navy-light/30 transition-transform group-hover:scale-[1.02] shrink-0">
               A
             </div>
-            <div className="flex flex-col">
-              <span className="font-serif font-bold text-lg sm:text-xl text-academic-navy tracking-tight leading-tight group-hover:text-academic-blue transition-colors">
+            <div className="flex flex-col min-w-0">
+              <span className="font-serif font-bold text-base sm:text-xl text-academic-navy tracking-tight leading-tight group-hover:text-academic-blue transition-colors truncate">
                 Arena Web Security
               </span>
-              <span className="text-[11px] font-sans font-semibold tracking-wider text-academic-blue uppercase leading-none mt-0.5">
-                Applied Cybersecurity Institute · .edu.bd
+              <span className="text-[10px] sm:text-[11px] font-sans font-semibold tracking-wide sm:tracking-wider text-academic-blue uppercase leading-none mt-0.5 truncate">
+                <span className="sm:hidden">Institute · .edu.bd</span>
+                <span className="hidden sm:inline">Applied Cybersecurity Institute · .edu.bd</span>
               </span>
             </div>
           </Link>

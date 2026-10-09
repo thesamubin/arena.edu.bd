@@ -1,27 +1,9 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Playfair_Display, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { InstitutionalTopBar } from "@/components/layout/InstitutionalTopBar";
+import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { InstitutionalHeader } from "@/components/layout/InstitutionalHeader";
 import { InstitutionalFooter } from "@/components/layout/InstitutionalFooter";
-
-const fontSans = Plus_Jakarta_Sans({
-  variable: "--font-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const fontSerif = Playfair_Display({
-  variable: "--font-serif",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const fontMono = JetBrains_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://arena.edu.bd"),
@@ -55,9 +37,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable}`}>
+    <html lang="en">
       <body className="min-h-screen flex flex-col font-sans bg-academic-warm text-academic-ink-primary antialiased">
         <InstitutionalTopBar />
+        <AnnouncementBar />
         <InstitutionalHeader />
         <main className="flex-1">{children}</main>
         <InstitutionalFooter />
