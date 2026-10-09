@@ -13,12 +13,12 @@ import { Button } from "@/components/ui/Button";
  */
 export function CorporateGovSection() {
   const tracks = [
-    "Secure Software Development Lifecycle (SSDLC) & Code Review",
-    "Web API Vulnerability Assessment for Banking & Fintech",
-    "Employee Social Engineering & Phishing Simulation Drills",
-    "Red vs Blue Team Table-Top Incident Response",
-    "Critical Information Infrastructure Protection (CIIP)",
-    "Digital Evidence Handling & Cyber Forensics",
+    "Secure Software Development Lifecycle (SSDLC)",
+    "Web API Vulnerability Assessment",
+    "Social Engineering & Phishing Simulations",
+    "Red vs Blue Team Incident Response",
+    "Critical Information Infrastructure (CIIP)",
+    "Digital Evidence & Cyber Forensics",
   ];
 
   return (
@@ -50,28 +50,24 @@ export function CorporateGovSection() {
               government defense organizations.
             </p>
             <div className="pt-4">
-              <Button href="/corporate" variant="accent" size="lg">
+              <Button href="/corporate" variant="accent" size="lg" className="group">
                 <span>Request Institutional Training</span>
-                <ArrowRight className="w-4 h-4 ml-1.5" />
+                <ArrowRight className="w-4 h-4 ml-1.5 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>
           </div>
 
-          <div className="bg-[#1C1C1E] p-8 rounded-xl border border-white/5 shadow-2xl">
-            <div className="flex items-center gap-4 mb-6 text-[#4FA1FF]">
-              <Building2 className="w-6 h-6" />
-              <Landmark className="w-6 h-6" />
-            </div>
+          <div className="bg-[#1C1C1E] p-8 sm:p-10 rounded-2xl border border-white/10 shadow-2xl">
             
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-white mb-4">
+            <h3 className="font-serif text-2xl font-bold text-white mb-6 border-b border-white/10 pb-4">
               Specialized Curricula
             </h3>
             
-            <ul className="space-y-3 text-sm sm:text-base text-slate-300">
+            <ul className="space-y-4 text-base text-slate-300">
               {tracks.map((item, idx) => (
-                <li key={idx} className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-[#4FA1FF] mt-0.5 shrink-0" />
-                  <span>{item}</span>
+                <li key={idx} className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-[#4FA1FF] shrink-0" />
+                  <span className="leading-snug">{item}</span>
                 </li>
               ))}
             </ul>
