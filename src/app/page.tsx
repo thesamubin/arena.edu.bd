@@ -12,18 +12,18 @@ import { EducationalResourcesSection } from "@/components/home/EducationalResour
 import { FinalCTASection } from "@/components/home/FinalCTASection";
 
 export const metadata: Metadata = {
-  title: "Arena Web Security Institute of Technology — Applied Cybersecurity Institute (arenawebsecurity.edu.bd)",
+  title: "Arena Web Security — Applied Cybersecurity Institute (arenawebsecurity.edu.bd)",
   description:
-    "Official academic portal of Arena Web Security Institute of Technology (arenawebsecurity.edu.bd). Professional Diploma in Cyber Security, hands-on virtual laboratories, offensive security (VAPT), OSINT, and corporate/government defense training.",
+    "Official academic portal of Arena Web Security (arenawebsecurity.edu.bd). Professional Diploma in Cyber Security, hands-on virtual laboratories, offensive security (VAPT), OSINT, and corporate/government defense training.",
   alternates: {
     canonical: "https://www.arenawebsecurity.edu.bd",
   },
   openGraph: {
-    title: "Arena Web Security Institute of Technology — Applied Cybersecurity Institute",
+    title: "Arena Web Security — Applied Cybersecurity Institute",
     description:
       "Structured cybersecurity education, hands-on practical laboratories, and verifiable credentials on arenawebsecurity.edu.bd. Founded 2012 in Dhaka, Bangladesh.",
     url: "https://www.arenawebsecurity.edu.bd",
-    siteName: "Arena Web Security Institute of Technology",
+    siteName: "Arena Web Security",
     locale: "en_US",
     type: "website",
   },

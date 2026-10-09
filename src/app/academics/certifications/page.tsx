@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { ACADEMIC_PROGRAMS } from "@/data/homeContent";
 
 export const metadata: Metadata = {
-  title: "Professional Certifications | Arena Web Security Institute of Technology",
+  title: "Professional Certifications | Arena Web Security",
   description: "Industry-aligned professional certifications in ethical hacking, intelligence tradecraft, and specialized security engineering.",
 };
 

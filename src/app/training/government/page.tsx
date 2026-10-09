@@ -4,7 +4,7 @@ import { TrainingDetail } from "@/components/training/TrainingDetail";
 import { GOVERNMENT_TRAINING } from "@/data/trainingContent";
 
 export const metadata: Metadata = {
-  title: "Government & Defense Training | Arena Web Security Institute of Technology",
+  title: "Government & Defense Training | Arena Web Security",
   description: "Specialized doctrine and capability training for defense forces, intelligence units, and public sector organizations.",
 };
 

@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { STUDENT_CONTENT } from "@/data/institutionalContent";
 
 export const metadata: Metadata = {
-  title: "Students | Arena Web Security Institute of Technology",
+  title: "Students | Arena Web Security",
   description: "Verified student demographics, professional backgrounds, and outcomes.",
 };
 

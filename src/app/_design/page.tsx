@@ -277,7 +277,7 @@ export default function Phase2DesignSystemPage() {
                 </CardHeader>
                 <CardContent className="space-y-2 text-xs text-academic-ink-secondary">
                   <p className="font-medium text-academic-navy">
-                    Arena Web Security Institute of Technology (Est. 2012)
+                    Arena Web Security (Est. 2012)
                   </p>
                   <p>House No: 1, Block: B, Banasree Main Road, Rampura, Dhaka - 1219</p>
                   <p className="pt-2">Hotline: +880 1310 333 444</p>

@@ -1,10 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, BookOpen, Building2 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
+import { AnimatedMetrics } from "./AnimatedMetrics";
 import {
   INSTITUTION_NAME,
   INSTITUTION_FOUNDED,
@@ -24,11 +26,19 @@ export function HeroSection() {
       spacing="xl"
       className="relative overflow-hidden border-b border-academic-grey-border"
     >
-      {/* Subtle background element */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.035] bg-[radial-gradient(#142B45_1px,transparent_1px)] [background-size:24px_24px]"
-        aria-hidden="true"
-      />
+      {/* Subtle abstract background image */}
+      <div className="absolute inset-0 pointer-events-none opacity-[0.85] mix-blend-multiply contrast-125">
+        <Image
+          src="/images/hero-bg.jpg"
+          alt="Abstract architectural mesh background"
+          fill
+          className="object-cover object-center"
+          priority
+        />
+      </div>
+      <div className="absolute inset-0 pointer-events-none bg-black/5" />
+      {/* Fade out gradient at the bottom so it blends with the next section */}
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent via-academic-warm/50 to-academic-warm" />
 
       <Container size="xl" className="relative">
         <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-8 py-10 sm:py-16">
@@ -90,25 +100,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Minimal Trust Indicators */}
-        <div className="mt-8 sm:mt-12 max-w-4xl mx-auto border-t border-academic-grey-border/80 pt-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          <div>
-            <p className="font-serif text-2xl font-bold text-academic-navy">{INSTITUTION_FOUNDED}</p>
-            <p className="text-xs font-sans text-academic-ink-muted mt-1">Founded in Dhaka</p>
-          </div>
-          <div>
-            <p className="font-serif text-2xl font-bold text-academic-navy">52 Weeks</p>
-            <p className="text-xs font-sans text-academic-ink-muted mt-1">Professional Diploma</p>
-          </div>
-          <div>
-            <p className="font-serif text-2xl font-bold text-academic-navy">Hybrid</p>
-            <p className="text-xs font-sans text-academic-ink-muted mt-1">Live + Practical Labs</p>
-          </div>
-          <div>
-            <p className="font-serif text-2xl font-bold text-academic-navy">Verified</p>
-            <p className="text-xs font-sans text-academic-ink-muted mt-1">Cryptographic Credentials</p>
-          </div>
-        </div>
+        <AnimatedMetrics />
 
       </Container>
     </Section>

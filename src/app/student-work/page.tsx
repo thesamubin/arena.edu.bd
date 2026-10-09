@@ -8,7 +8,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { STUDENT_CONTENT } from "@/data/institutionalContent";
 
 export const metadata: Metadata = {
-  title: "Student Work | Arena Web Security Institute of Technology",
+  title: "Student Work | Arena Web Security",
   description: "Verified projects, research, and vulnerability disclosures by our students.",
 };
 

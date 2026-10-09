@@ -1,5 +1,5 @@
 /**
- * Genuine institutional content for the Arena Web Security Institute of Technology homepage.
+ * Genuine institutional content for the Arena Web Security homepage.
  *
  * Rules:
  * - Only verified historical facts, genuine programs, and documented faculty.
@@ -133,6 +133,7 @@ export interface FacultyProfile {
   experience: string;
   specializations: string[];
   summary: string;
+  image?: string;
 }
 
 export const VERIFIED_FACULTY: FacultyProfile[] = [
@@ -148,6 +149,7 @@ export const VERIFIED_FACULTY: FacultyProfile[] = [
     ],
     summary:
       "Pioneer in technical cybersecurity training in Bangladesh since 2012. Conducted corporate assessments and specialized defense training across government and enterprise sectors.",
+    image: "/images/faculty/tanjim_al_fahim.jpg",
   },
   {
     name: "Md Ashif Islam",
@@ -161,6 +163,7 @@ export const VERIFIED_FACULTY: FacultyProfile[] = [
     ],
     summary:
       "Seasoned security researcher specializing in web application vulnerability discovery, secure architecture review, and offensive testing frameworks.",
+    image: "/images/faculty/md_ashif_islam.jpg",
   },
   {
     name: "Bijoy Mondal",
@@ -174,6 +177,7 @@ export const VERIFIED_FACULTY: FacultyProfile[] = [
     ],
     summary:
       "Systems defense instructor focusing on enterprise Linux hardening, server administration security, and automated technical auditing.",
+    image: "/images/faculty/bijoy_mondal.jpg",
   },
 ];
 

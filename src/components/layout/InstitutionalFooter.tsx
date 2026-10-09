@@ -110,10 +110,10 @@ export function InstitutionalFooter() {
           <div className="flex flex-col items-center text-center mb-20">
             <Link href="/" className="inline-flex flex-col items-center group">
               <h2 className="font-serif text-3xl sm:text-4xl md:text-[42px] font-bold text-white tracking-[0.1em] sm:tracking-[0.15em] uppercase leading-tight mb-2">
-                Arena Web Security Institute of Technology
+                Arena Web Security
               </h2>
               <span className="block font-sans text-[10px] sm:text-xs tracking-[0.2em] sm:tracking-[0.25em] text-slate-400 uppercase mb-8 font-medium">
-                Applied Cybersecurity Institute
+                Institute of Technology
               </span>
               
               {/* Shield/Crest Graphic */}

@@ -31,11 +31,6 @@ export function FinalCTASection() {
 
       <Container size="xl" className="relative">
         <div className="max-w-3xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-sm bg-white/10 text-slate-200 border border-white/15 text-xs font-mono">
-            <span>Official Academic Portal</span>
-            <span>·</span>
-            <span className="text-emerald-400">{INSTITUTION_DOMAIN}</span>
-          </div>
 
           <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-[1.15]">
             Advance Your Cybersecurity Capability with Academic Rigor.

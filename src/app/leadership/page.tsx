@@ -8,8 +8,8 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { LEADERSHIP_CONTENT } from "@/data/institutionalContent";
 
 export const metadata: Metadata = {
-  title: "Leadership | Arena Web Security Institute of Technology",
-  description: "Meet the leadership team driving the vision and strategy of Arena Web Security Institute of Technology.",
+  title: "Leadership | Arena Web Security",
+  description: "Meet the leadership team driving the vision and strategy of Arena Web Security.",
 };
 
 export default function LeadershipPage() {

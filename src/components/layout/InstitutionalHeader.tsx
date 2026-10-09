@@ -55,7 +55,7 @@ export function InstitutionalHeader() {
 
   return (
     <>
-      <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-academic-grey-border">
+      <header className="sticky top-0 z-40 bg-white/75 backdrop-blur-md border-b border-black/5 shadow-[0_4px_30px_rgba(0,0,0,0.03)] transition-all duration-300">
         <Container size="xl" className="flex items-center justify-between h-20">
           {/* Institutional Crest / Logo */}
           <Link href="/" className="flex items-center gap-2.5 sm:gap-3.5 group min-w-0">
@@ -64,11 +64,10 @@ export function InstitutionalHeader() {
             </div>
             <div className="flex flex-col min-w-0">
               <span className="font-serif font-bold text-base sm:text-xl text-academic-navy tracking-tight leading-tight group-hover:text-academic-blue transition-colors truncate">
-                Arena Web Security Institute of Technology
+                Arena Web Security
               </span>
               <span className="text-[10px] sm:text-[11px] font-sans font-semibold tracking-wide sm:tracking-wider text-academic-blue uppercase leading-none mt-0.5 truncate">
-                <span className="sm:hidden">Institute · .edu.bd</span>
-                <span className="hidden sm:inline">Applied Cybersecurity Institute · .edu.bd</span>
+                Institute of Technology
               </span>
             </div>
           </Link>

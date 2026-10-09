@@ -91,10 +91,10 @@ export function MobileDrawer({ isOpen, onClose }: MobileDrawerProps) {
             </div>
             <div>
               <span className="font-serif font-bold text-sm tracking-tight text-academic-navy block leading-none">
-                Arena Web Security Institute of Technology
+                Arena Web Security
               </span>
               <span className="text-[10px] uppercase tracking-wider text-academic-blue font-sans font-medium block mt-0.5">
-                arenawebsecurity.edu.bd
+                Institute of Technology
               </span>
             </div>
           </div>

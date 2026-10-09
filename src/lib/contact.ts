@@ -1,5 +1,5 @@
 /**
- * Centralized institutional contact data for Arena Web Security Institute of Technology.
+ * Centralized institutional contact data for Arena Web Security.
  *
  * Single source of truth — import from here instead of hardcoding values
  * across layout components.
@@ -28,7 +28,7 @@ export const CONTACT_ADDRESS = {
   short: "Banasree Main Rd, Rampura, Dhaka - 1219",
 } as const;
 
-export const INSTITUTION_NAME = "Arena Web Security Institute of Technology";
+export const INSTITUTION_NAME = "Arena Web Security";
 export const INSTITUTION_DOMAIN = "arenawebsecurity.edu.bd";
 export const INSTITUTION_FOUNDED = 2012;
 

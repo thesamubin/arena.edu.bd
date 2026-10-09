@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { TRAINING_OVERVIEW, CORPORATE_TRAINING, GOVERNMENT_TRAINING } from "@/data/trainingContent";
 
 export const metadata: Metadata = {
-  title: "Institutional Training | Arena Web Security Institute of Technology",
+  title: "Institutional Training | Arena Web Security",
   description: "Specialized capability-building programs for corporate enterprises and government institutions.",
 };
 

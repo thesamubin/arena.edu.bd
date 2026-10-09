@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
@@ -12,7 +13,7 @@ import { VERIFIED_FACULTY } from "@/data/homeContent";
  */
 export function FacultySection() {
   return (
-    <Section background="warm" spacing="xl" className="border-b border-academic-grey-border">
+    <Section background="grey" spacing="xl" className="border-b border-academic-grey-border">
       <Container size="xl">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
           
@@ -55,8 +56,14 @@ export function FacultySection() {
               return (
                 <div key={idx} className="group border-b border-academic-grey-border/60 pb-10 last:border-0 last:pb-0 flex flex-col sm:flex-row gap-6 sm:gap-10">
                   <div className="shrink-0">
-                    <div className="w-16 h-16 rounded-sm bg-academic-navy text-academic-warm flex items-center justify-center font-serif font-bold text-xl border border-academic-navy-light/40">
-                      {initials}
+                    <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-lg bg-academic-grey-border/30 overflow-hidden relative border border-academic-grey-border/60">
+                      {faculty.image ? (
+                        <Image src={faculty.image} alt={faculty.name} fill className="object-cover" />
+                      ) : (
+                        <div className="absolute inset-0 flex items-center justify-center bg-academic-navy text-academic-warm font-serif font-bold text-3xl">
+                          {initials}
+                        </div>
+                      )}
                     </div>
                   </div>
                   
