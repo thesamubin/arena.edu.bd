@@ -28,7 +28,7 @@ export function generateMetadata({ params }: { params: Promise<{ slug: string }>
     }
 
     return {
-      title: `${program.title} | Arena Web Security`,
+      title: `${program.title} | Arena Web Security Institute of Technology`,
       description: program.description,
     };
   });

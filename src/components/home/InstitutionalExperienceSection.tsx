@@ -20,7 +20,7 @@ export function InstitutionalExperienceSection() {
             Trusted Experience Across Public, Defense & Academic Sectors.
           </Heading>
           <p className="text-academic-ink-secondary text-base sm:text-lg leading-relaxed">
-            Since 2012, Arena Web Security has conducted specialized technical security seminars,
+            Since 2012, Arena Web Security Institute of Technology has conducted specialized technical security seminars,
             defensive training, and awareness workshops for national institutions and defense bodies.
           </p>
         </div>

@@ -1,18 +1,18 @@
 /**
- * Centralized institutional contact data for Arena Web Security.
+ * Centralized institutional contact data for Arena Web Security Institute of Technology.
  *
  * Single source of truth — import from here instead of hardcoding values
  * across layout components.
  *
  * TODO: [CONTENT — Confirm official .edu.bd contact email]
- *   Replace CONTACT_EMAIL with an @arena.edu.bd address once provisioned.
+ *   Replace CONTACT_EMAIL with an @arenawebsecurity.edu.bd address once provisioned.
  *   The .net address below is the verified legacy contact used on the live site.
  */
 
 export const CONTACT_EMAIL = "info@arenawebsecurity.net";
 
-// TODO: [CONTENT — Confirm whether an @arena.edu.bd address exists]
-// export const CONTACT_EMAIL_EDU = "info@arena.edu.bd";
+// TODO: [CONTENT — Confirm whether an @arenawebsecurity.edu.bd address exists]
+// export const CONTACT_EMAIL_EDU = "info@arenawebsecurity.edu.bd";
 
 export const CONTACT_PHONE_PRIMARY = "+880 1310 333 444";
 export const CONTACT_PHONE_SECONDARY = "+880 1885 841 489";
@@ -28,8 +28,8 @@ export const CONTACT_ADDRESS = {
   short: "Banasree Main Rd, Rampura, Dhaka - 1219",
 } as const;
 
-export const INSTITUTION_NAME = "Arena Web Security";
-export const INSTITUTION_DOMAIN = "arena.edu.bd";
+export const INSTITUTION_NAME = "Arena Web Security Institute of Technology";
+export const INSTITUTION_DOMAIN = "arenawebsecurity.edu.bd";
 export const INSTITUTION_FOUNDED = 2012;
 
 /** External admission & certificate-verification portal (separate subdomain) */

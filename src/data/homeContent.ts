@@ -1,5 +1,5 @@
 /**
- * Genuine institutional content for the Arena Web Security homepage.
+ * Genuine institutional content for the Arena Web Security Institute of Technology homepage.
  *
  * Rules:
  * - Only verified historical facts, genuine programs, and documented faculty.

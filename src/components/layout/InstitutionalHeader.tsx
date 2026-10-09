@@ -64,7 +64,7 @@ export function InstitutionalHeader() {
             </div>
             <div className="flex flex-col min-w-0">
               <span className="font-serif font-bold text-base sm:text-xl text-academic-navy tracking-tight leading-tight group-hover:text-academic-blue transition-colors truncate">
-                Arena Web Security
+                Arena Web Security Institute of Technology
               </span>
               <span className="text-[10px] sm:text-[11px] font-sans font-semibold tracking-wide sm:tracking-wider text-academic-blue uppercase leading-none mt-0.5 truncate">
                 <span className="sm:hidden">Institute · .edu.bd</span>

@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { DIPLOMA_CONTENT } from "@/data/diplomaContent";
 
 export const metadata: Metadata = {
-  title: "Professional Diploma in Cyber Security | Arena Web Security",
+  title: "Professional Diploma in Cyber Security | Arena Web Security Institute of Technology",
   description: "Comprehensive year-long curriculum encompassing foundational systems, advanced vulnerability assessment, ethical hacking, digital forensics, and defensive perimeter engineering.",
 };
 

@@ -4,7 +4,7 @@ import { TrainingDetail } from "@/components/training/TrainingDetail";
 import { CORPORATE_TRAINING } from "@/data/trainingContent";
 
 export const metadata: Metadata = {
-  title: "Corporate Capability Building | Arena Web Security",
+  title: "Corporate Capability Building | Arena Web Security Institute of Technology",
   description: "Targeted upskilling for enterprise IT teams, focusing on secure development lifecycles, active defense, and compliance.",
 };
 

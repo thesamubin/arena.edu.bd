@@ -13,7 +13,7 @@ import {
 /**
  * Section 4: Institute Introduction (Phase 3B Redesign)
  *
- * Sets the academic tone and explains the pedagogical foundation of Arena Web Security.
+ * Sets the academic tone and explains the pedagogical foundation of Arena Web Security Institute of Technology.
  * Simplified editorial layout replacing the previous heavy cards.
  */
 export function InstituteIntroSection() {

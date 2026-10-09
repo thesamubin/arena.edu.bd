@@ -221,7 +221,7 @@ export default function Phase2DesignSystemPage() {
                   Content Governance & Institutional Transparency
                 </Heading>
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed font-light">
-                  All institutional claims on <span className="font-mono text-slate-100">arena.edu.bd</span> reflect confirmed history since 2012. We deliberately omit fabricated UGC university degrees, fake student dollar counters, and synthetic testimonials.
+                  All institutional claims on <span className="font-mono text-slate-100">arenawebsecurity.edu.bd</span> reflect confirmed history since 2012. We deliberately omit fabricated UGC university degrees, fake student dollar counters, and synthetic testimonials.
                 </p>
                 <div className="pt-2 text-xs text-slate-400 italic">
                   Note: Any pending certifications or accreditation citations are strictly tracked as TODO items prior to final publishing.
@@ -257,7 +257,7 @@ export default function Phase2DesignSystemPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-academic-ink-muted">Official Portal</span>
-                    <span className="font-mono text-academic-blue font-medium">arena.edu.bd</span>
+                    <span className="font-mono text-academic-blue font-medium">arenawebsecurity.edu.bd</span>
                   </div>
                 </CardContent>
                 <CardFooter>
@@ -277,7 +277,7 @@ export default function Phase2DesignSystemPage() {
                 </CardHeader>
                 <CardContent className="space-y-2 text-xs text-academic-ink-secondary">
                   <p className="font-medium text-academic-navy">
-                    Arena Web Security (Est. 2012)
+                    Arena Web Security Institute of Technology (Est. 2012)
                   </p>
                   <p>House No: 1, Block: B, Banasree Main Road, Rampura, Dhaka - 1219</p>
                   <p className="pt-2">Hotline: +880 1310 333 444</p>

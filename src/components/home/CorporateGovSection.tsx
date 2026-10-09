@@ -33,7 +33,7 @@ export function CorporateGovSection() {
               Customized Training for Enterprise & Public Sector.
             </Heading>
             <p className="text-academic-ink-secondary text-base sm:text-lg leading-relaxed">
-              Beyond individual diplomas, Arena Web Security delivers tailored technical training
+              Beyond individual diplomas, Arena Web Security Institute of Technology delivers tailored technical training
               curricula for corporate development teams, financial security operations centers, and
               government defense organizations.
             </p>

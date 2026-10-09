@@ -8,7 +8,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 import { PARTNERS_CONTENT } from "@/data/institutionalContent";
 
 export const metadata: Metadata = {
-  title: "Partners | Arena Web Security",
+  title: "Partners | Arena Web Security Institute of Technology",
   description: "Distinguishing our formal academic partners, training recipients, and vendors.",
 };
 

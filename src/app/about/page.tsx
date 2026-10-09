@@ -7,8 +7,8 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { ABOUT_CONTENT } from "@/data/institutionalContent";
 
 export const metadata: Metadata = {
-  title: "About Us | Arena Web Security",
-  description: "Learn about the mission, verified history, and vision of Arena Web Security.",
+  title: "About Us | Arena Web Security Institute of Technology",
+  description: "Learn about the mission, verified history, and vision of Arena Web Security Institute of Technology.",
 };
 
 export default function AboutPage() {
@@ -18,7 +18,7 @@ export default function AboutPage() {
         <Container>
           <Breadcrumbs items={[{ label: "About" }]} className="mb-8" />
           <Heading level={1}>
-            About Arena Web Security
+            About Arena Web Security Institute of Technology
           </Heading>
         </Container>
       </Section>

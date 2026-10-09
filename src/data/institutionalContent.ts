@@ -1,7 +1,7 @@
 import { VERIFIED_FACULTY, INSTITUTIONAL_ENGAGEMENTS } from "./homeContent";
 
 export const ABOUT_CONTENT = {
-  mission: "TODO: Define the official mission statement of Arena Web Security.",
+  mission: "TODO: Define the official mission statement of Arena Web Security Institute of Technology.",
   history: "TODO: Outline the verified history of the institute since 2012.",
   vision: "TODO: Define the vision for future academic and professional cybersecurity growth.",
 };
@@ -41,7 +41,7 @@ export const STUDENT_CONTENT = {
 };
 
 export const PARTNERS_CONTENT = {
-  intro: "Arena Web Security maintains strict distinctions between formal academic partnerships, training recipients, and vendor relationships.",
+  intro: "Arena Web Security Institute of Technology maintains strict distinctions between formal academic partnerships, training recipients, and vendor relationships.",
   // Grouping the engagements from homeContent
   academicPartners: INSTITUTIONAL_ENGAGEMENTS.filter(e => e.category === "Academic Collaboration"),
   trainingRecipients: INSTITUTIONAL_ENGAGEMENTS.filter(e => e.category === "Government / Defense" || e.category === "Public Institution"),

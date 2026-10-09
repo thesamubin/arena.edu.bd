@@ -62,7 +62,7 @@ export default function ContactPage() {
               <div className="space-y-4 text-academic-ink-secondary text-sm">
                 <p>
                   <strong>Address:</strong><br />
-                  Arena Web Security<br />
+                  Arena Web Security Institute of Technology<br />
                   {CONTACT_ADDRESS.full}
                 </p>
                 <p>

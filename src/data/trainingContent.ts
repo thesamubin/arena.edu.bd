@@ -1,5 +1,5 @@
 export const TRAINING_OVERVIEW = {
-  intro: "Beyond academic programs, Arena Web Security provides specialized capability-building programs for corporate enterprises and government institutions.",
+  intro: "Beyond academic programs, Arena Web Security Institute of Technology provides specialized capability-building programs for corporate enterprises and government institutions.",
   approach: "TODO: Describe the pedagogical approach for institutional training (e.g., customized labs, closed environments).",
 };
 

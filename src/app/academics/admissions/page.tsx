@@ -7,7 +7,7 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/Card";
 
 export const metadata: Metadata = {
-  title: "Admissions | Arena Web Security",
+  title: "Admissions | Arena Web Security Institute of Technology",
   description: "Information regarding admissions criteria, tuition fees, and application procedures for our academic programs.",
 };
 
@@ -27,7 +27,7 @@ export default function AdmissionsPage() {
             Admissions
           </Heading>
           <p className="mt-6 max-w-3xl text-lg text-academic-ink-secondary leading-relaxed">
-            Detailed information regarding enrollment criteria, intake schedules, and the application process for Arena Web Security programs.
+            Detailed information regarding enrollment criteria, intake schedules, and the application process for Arena Web Security Institute of Technology programs.
           </p>
         </Container>
       </Section>

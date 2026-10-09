@@ -8,7 +8,7 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/com
 import { FACULTY_PAGE_CONTENT } from "@/data/institutionalContent";
 
 export const metadata: Metadata = {
-  title: "Faculty | Arena Web Security",
+  title: "Faculty | Arena Web Security Institute of Technology",
   description: "Verified qualifications, professional experience, and teaching responsibilities of our instructional faculty.",
 };
 

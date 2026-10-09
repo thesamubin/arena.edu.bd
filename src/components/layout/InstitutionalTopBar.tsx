@@ -15,7 +15,7 @@ export function InstitutionalTopBar() {
         <div className="flex items-center gap-3">
           <span className="inline-flex items-center gap-1.5 font-medium text-emerald-400">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-            Official Portal: arena.edu.bd
+            Official Portal: arenawebsecurity.edu.bd
           </span>
           <span className="text-academic-navy-light">•</span>
           <span className="text-slate-300">
