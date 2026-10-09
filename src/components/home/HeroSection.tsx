@@ -22,12 +22,12 @@ import {
 export function HeroSection() {
   return (
     <Section
-      background="warm"
+      background="white"
       spacing="xl"
       className="relative overflow-hidden border-b border-academic-grey-border"
     >
-      {/* Subtle abstract background image */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.85] mix-blend-multiply contrast-125">
+      {/* Subtle abstract background image - darker and higher contrast */}
+      <div className="absolute inset-0 pointer-events-none opacity-100 mix-blend-multiply contrast-[1.3] brightness-90">
         <Image
           src="/images/hero-bg.jpg"
           alt="Abstract architectural mesh background"
@@ -36,9 +36,9 @@ export function HeroSection() {
           priority
         />
       </div>
-      <div className="absolute inset-0 pointer-events-none bg-black/5" />
+      <div className="absolute inset-0 pointer-events-none bg-black/10" />
       {/* Fade out gradient at the bottom so it blends with the next section */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent via-academic-warm/50 to-academic-warm" />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent via-white/50 to-white" />
 
       <Container size="xl" className="relative">
         <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-8 py-10 sm:py-16">
