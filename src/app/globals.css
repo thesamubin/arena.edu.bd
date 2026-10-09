@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-navy: #142B45;
+    --color-navy-deep: #0B1726;
+    --color-navy-light: #1E3E63;
+    --color-warm-white: #FAFAF7;
+    --color-light-grey: #F1F3F5;
+    --color-muted-blue: #4778A8;
+    --color-border-subtle: #E2E8F0;
+    --color-ink-primary: #0F172A;
+    --color-ink-secondary: #334155;
+    --color-ink-muted: #64748B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    color: var(--color-ink-primary);
+    background-color: var(--color-warm-white);
+  }
+
+  body {
+    font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--color-warm-white);
+    color: var(--color-ink-primary);
+    line-height: 1.6;
+    overflow-x: clip;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Academic headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-navy);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* High-contrast focus visibility */
+  :focus-visible {
+    outline: 2px solid var(--color-muted-blue);
+    outline-offset: 2px;
+  }
+
+  /* Subtle academic selection */
+  ::selection {
+    background-color: #142B45;
+    color: #FAFAF7;
+  }
+}
+
+/* Accessibility: respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
