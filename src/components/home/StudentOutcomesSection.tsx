@@ -30,7 +30,7 @@ export function StudentOutcomesSection() {
   ];
 
   return (
-    <Section background="warm" spacing="xl" className="border-b border-academic-grey-border">
+    <Section background="white" spacing="xl" className="border-b border-academic-grey-border">
       <Container size="xl">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
           
