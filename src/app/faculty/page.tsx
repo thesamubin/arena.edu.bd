@@ -62,14 +62,18 @@ export default function FacultyPage() {
                     </div>
                     
                     <div className="space-y-4">
-                      <div className="bg-yellow-50 border border-yellow-200 p-3 rounded-md">
-                        <span className="text-xs font-bold text-yellow-800 uppercase tracking-wider block mb-1">TODO: Qualifications</span>
-                        <span className="text-xs text-yellow-900">{member.qualifications}</span>
-                      </div>
-                      <div className="bg-yellow-50 border border-yellow-200 p-3 rounded-md">
-                        <span className="text-xs font-bold text-yellow-800 uppercase tracking-wider block mb-1">TODO: Teaching</span>
-                        <span className="text-xs text-yellow-900">{member.teachingResponsibilities}</span>
-                      </div>
+                      {!member.qualifications.startsWith("TODO") && (
+                        <div>
+                          <Heading level={4} className="mb-2 text-base">Qualifications</Heading>
+                          <span className="text-xs text-academic-ink-secondary">{member.qualifications}</span>
+                        </div>
+                      )}
+                      {!member.teachingResponsibilities.startsWith("TODO") && (
+                        <div>
+                          <Heading level={4} className="mb-2 text-base">Teaching</Heading>
+                          <span className="text-xs text-academic-ink-secondary">{member.teachingResponsibilities}</span>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

@@ -51,6 +51,7 @@ const navigationItems = [
 
 export function InstitutionalHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <>
@@ -74,8 +75,13 @@ export function InstitutionalHeader() {
 
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-1 xl:gap-2 font-sans text-sm font-medium">
-            {navigationItems.map((item) => (
-              <div key={item.label} className="relative group">
+            {navigationItems.map((item, idx) => (
+              <div 
+                key={item.label} 
+                className="relative"
+                onMouseEnter={() => setHoveredIndex(idx)}
+                onMouseLeave={() => setHoveredIndex(null)}
+              >
                 <Link
                   href={item.href}
                   className="px-3 py-2 rounded-sm text-academic-ink-primary hover:text-academic-blue hover:bg-academic-grey/60 transition-colors inline-block"
@@ -83,7 +89,11 @@ export function InstitutionalHeader() {
                   {item.label}
                 </Link>
                 {item.subItems && (
-                  <div className="absolute top-full left-0 mt-0 w-56 bg-white border border-academic-grey-border rounded-sm shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                  <div 
+                    className={`absolute top-full left-0 mt-0 w-56 bg-white border border-academic-grey-border rounded-sm shadow-lg transition-all duration-200 z-50 ${
+                      hoveredIndex === idx ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
+                    }`}
+                  >
                     <div className="py-2">
                       {item.subItems.map((sub) => (
                         <Link

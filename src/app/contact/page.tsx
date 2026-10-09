@@ -7,6 +7,8 @@ import { Heading } from "@/components/ui/Heading";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { Button } from "@/components/ui/Button";
 
+import { CONTACT_ADDRESS, CONTACT_EMAIL, CONTACT_PHONE_PRIMARY } from "@/lib/contact";
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({ name: "", email: "", message: "" });
@@ -61,15 +63,19 @@ export default function ContactPage() {
                 <p>
                   <strong>Address:</strong><br />
                   Arena Web Security<br />
-                  TODO: Add official verified address.
+                  {CONTACT_ADDRESS.full}
                 </p>
                 <p>
                   <strong>Email:</strong><br />
-                  TODO: Add official email contact.
+                  <a href={`mailto:${CONTACT_EMAIL}`} className="hover:text-academic-blue hover:underline">
+                    {CONTACT_EMAIL}
+                  </a>
                 </p>
                 <p>
                   <strong>Phone:</strong><br />
-                  TODO: Add official phone number.
+                  <a href={`tel:${CONTACT_PHONE_PRIMARY.replace(/\s/g, "")}`} className="hover:text-academic-blue hover:underline">
+                    {CONTACT_PHONE_PRIMARY}
+                  </a>
                 </p>
               </div>
             </div>

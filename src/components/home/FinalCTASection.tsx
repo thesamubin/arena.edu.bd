@@ -43,7 +43,7 @@ export function FinalCTASection() {
 
           <p className="text-slate-300 font-sans text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
             Whether preparing for specialized security certifications, enrolling in our flagship
-            one-year diploma, or commissioning institutional defense workshops, {INSTITUTION_NAME}
+            one-year diploma, or commissioning institutional defense workshops, {INSTITUTION_NAME}{" "}
             provides structured, disciplined instruction.
           </p>
 

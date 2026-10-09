@@ -81,7 +81,7 @@ export function HeroSection() {
               •
             </span>
             <Link
-              href="/corporate"
+              href="/training/corporate"
               className="hover:text-academic-navy underline underline-offset-4 decoration-academic-grey-border hover:decoration-academic-navy transition-colors inline-flex items-center gap-1.5"
             >
               <Building2 className="w-4 h-4 text-academic-blue" />

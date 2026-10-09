@@ -16,7 +16,7 @@ export function EducationalResourcesSection() {
       <Container size="xl">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
           
-          <div className="lg:w-1/3 space-y-6 sticky top-24">
+          <div className="lg:w-1/3 space-y-6 lg:sticky lg:top-24">
             <Heading
               level={2}
               kicker="Publications & Resources"
