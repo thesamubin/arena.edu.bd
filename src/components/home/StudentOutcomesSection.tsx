@@ -37,7 +37,6 @@ export function StudentOutcomesSection() {
           <div className="lg:w-1/3 space-y-6">
             <Heading
               level={2}
-              kicker="Academic Artifacts"
               className="text-3xl sm:text-4xl"
             >
               Verified Technical Deliverables.

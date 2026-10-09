@@ -23,10 +23,9 @@ export function InstituteIntroSection() {
         <div className="flex flex-col items-center text-center space-y-6">
           <Heading
             level={2}
-            kicker="Institutional Profile"
             className="text-3xl sm:text-4xl"
           >
-            Academic Rigor in an Era of Expanding Cyber Threat.
+            Cybersecurity Education Built on Practical Experience.
           </Heading>
           
           <div className="space-y-6 text-academic-ink-secondary text-base sm:text-lg leading-relaxed">

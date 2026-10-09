@@ -38,10 +38,9 @@ export function OnlineLearningSection() {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-6">
           <Heading
             level={2}
-            kicker="Instructional Methodology"
             className="text-3xl sm:text-4xl"
           >
-            Online Delivery Anchored in Practical Drills.
+            Learn Cybersecurity Through Practical Training.
           </Heading>
           <p className="text-academic-ink-secondary text-base sm:text-lg leading-relaxed">
             Cybersecurity cannot be learned passively. Our online-first academic model couples scheduled 

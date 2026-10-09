@@ -17,7 +17,7 @@ export default function StudentsPage() {
       <Section background="warm" spacing="md">
         <Container>
           <Breadcrumbs items={[{ label: "Students" }]} className="mb-8" />
-          <Heading level={1} kicker="Community">
+          <Heading level={1}>
             Our Students
           </Heading>
         </Container>

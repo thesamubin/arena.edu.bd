@@ -25,7 +25,7 @@ export default function DiplomaPage() {
             ]} 
             className="mb-8 [&_a]:text-academic-warm/80 [&_a:hover]:text-academic-warm [&_span]:text-white [&_svg]:text-academic-warm/50" 
           />
-          <Heading level={1} kicker="Flagship Program" className="text-white">
+          <Heading level={1} className="text-white">
             Professional Diploma in Cyber Security
           </Heading>
           <p className="mt-6 max-w-3xl text-lg text-academic-warm/90 leading-relaxed">

@@ -19,7 +19,7 @@ export default function AcademicsPage() {
       <Section background="warm" spacing="md">
         <Container>
           <Breadcrumbs items={[{ label: "Academics" }]} className="mb-8" />
-          <Heading level={1} kicker="Academic Programs">
+          <Heading level={1}>
             Structured Cybersecurity Education
           </Heading>
           <p className="mt-6 max-w-3xl text-lg text-academic-ink-secondary leading-relaxed">

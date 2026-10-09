@@ -19,7 +19,7 @@ export default function TrainingPage() {
       <Section background="warm" spacing="md">
         <Container>
           <Breadcrumbs items={[{ label: "Training" }]} className="mb-8" />
-          <Heading level={1} kicker="B2B & G2G Programs">
+          <Heading level={1}>
             Institutional Training
           </Heading>
           <p className="mt-6 max-w-3xl text-lg text-academic-ink-secondary leading-relaxed">

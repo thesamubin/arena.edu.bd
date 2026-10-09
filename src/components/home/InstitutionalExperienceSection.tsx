@@ -15,7 +15,6 @@ export function InstitutionalExperienceSection() {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-6">
           <Heading
             level={2}
-            kicker="Institutional Engagement History"
             className="text-3xl sm:text-4xl"
           >
             Trusted Experience Across Public, Defense & Academic Sectors.

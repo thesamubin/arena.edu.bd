@@ -18,7 +18,7 @@ export default function StudentWorkPage() {
       <Section background="warm" spacing="md">
         <Container>
           <Breadcrumbs items={[{ label: "Student Work" }]} className="mb-8" />
-          <Heading level={1} kicker="Community">
+          <Heading level={1}>
             Student Projects & Research
           </Heading>
         </Container>

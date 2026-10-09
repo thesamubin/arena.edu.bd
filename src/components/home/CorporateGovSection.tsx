@@ -28,7 +28,6 @@ export function CorporateGovSection() {
           <div className="space-y-6">
             <Heading
               level={2}
-              kicker="Institutional Solutions"
               className="text-3xl sm:text-4xl"
             >
               Customized Training for Enterprise & Public Sector.

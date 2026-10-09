@@ -28,7 +28,7 @@ export default function CoursesPage() {
             ]} 
             className="mb-8" 
           />
-          <Heading level={1} kicker="Technical Skills">
+          <Heading level={1}>
             Short Courses & Practicums
           </Heading>
           <p className="mt-6 max-w-3xl text-lg text-academic-ink-secondary leading-relaxed">

@@ -16,16 +16,20 @@ export function EducationalResourcesSection() {
       <Container size="xl">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24 items-start">
           
-          <div className="lg:w-1/3 lg:sticky lg:top-24">
-            <div className="sticky top-16 sm:top-[72px] z-20 bg-academic-warm py-3 -mx-4 px-4 sm:mx-0 sm:px-0 lg:static lg:bg-transparent lg:p-0 lg:z-auto border-b border-academic-grey-border/50 lg:border-none shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] lg:shadow-none transition-all">
+          <div className="contents lg:block lg:w-1/3 lg:sticky lg:top-24">
+
+
+            {/* Sticky Title */}
+            <div className="sticky top-20 z-20 bg-academic-warm/95 backdrop-blur-md pt-5 pb-4 -mx-4 px-4 sm:mx-0 sm:px-0 lg:static lg:bg-transparent lg:backdrop-blur-none lg:p-0 lg:z-auto border-b border-academic-grey-border/50 lg:border-none shadow-[0_4px_20px_-10px_rgba(0,0,0,0.05)] lg:shadow-none transition-all">
+
               <Heading
                 level={2}
-                kicker="Publications & Resources"
                 className="text-2xl sm:text-3xl lg:text-4xl"
               >
                 Educational Guides & Security Standards.
               </Heading>
             </div>
+            
             <div className="space-y-6 mt-4 lg:mt-6 relative z-10">
               <p className="text-academic-ink-secondary text-base leading-relaxed">
                 Curated pedagogical references, technical primers, and institutional ethics guidelines

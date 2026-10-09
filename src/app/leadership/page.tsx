@@ -18,7 +18,7 @@ export default function LeadershipPage() {
       <Section background="warm" spacing="md">
         <Container>
           <Breadcrumbs items={[{ label: "Leadership" }]} className="mb-8" />
-          <Heading level={1} kicker="Institution">
+          <Heading level={1}>
             Institutional Leadership
           </Heading>
           <div className="mt-6 bg-yellow-50 border border-yellow-200 p-4 rounded-md max-w-3xl">

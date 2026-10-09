@@ -55,7 +55,7 @@ export default function TrainingRequestPage() {
             ]} 
             className="mb-8" 
           />
-          <Heading level={1} kicker="Corporate & Government">
+          <Heading level={1}>
             Request Training Inquiry
           </Heading>
           <p className="mt-4 max-w-2xl text-academic-ink-secondary">

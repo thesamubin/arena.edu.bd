@@ -28,7 +28,7 @@ export default function Phase2DesignSystemPage() {
               PHASE 2 FOUNDATIONAL ARCHITECTURE
             </Badge>
 
-            <Heading level={1} kicker="Arena Web Security · Official Portal (arena.edu.bd)">
+            <Heading level={1}>
               Design System & Shared Component Architecture
             </Heading>
 
@@ -61,7 +61,7 @@ export default function Phase2DesignSystemPage() {
       <Section id="tokens" background="white" spacing="lg">
         <Container size="xl">
           <div className="max-w-2xl mb-10">
-            <Heading level={2} kicker="Color & Typography Tokens">
+            <Heading level={2}>
               Institutional Design System Tokens
             </Heading>
             <p className="text-sm text-academic-ink-secondary mt-2">
@@ -156,7 +156,7 @@ export default function Phase2DesignSystemPage() {
             {/* Primary Content Column */}
             <div className="lg:col-span-8 space-y-8">
               <div className="bg-white p-6 sm:p-8 rounded-md border border-academic-grey-border shadow-academic space-y-6">
-                <Heading level={2} kicker="Reusable Page-Layout Pattern A">
+                <Heading level={2}>
                   Two-Column Reading & Specification Layout
                 </Heading>
 

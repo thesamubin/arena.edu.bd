@@ -23,7 +23,7 @@ export default function AdmissionsPage() {
             ]} 
             className="mb-8" 
           />
-          <Heading level={1} kicker="Join the Institute">
+          <Heading level={1}>
             Admissions
           </Heading>
           <p className="mt-6 max-w-3xl text-lg text-academic-ink-secondary leading-relaxed">

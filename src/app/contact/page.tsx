@@ -48,7 +48,7 @@ export default function ContactPage() {
       <Section background="warm" spacing="md">
         <Container>
           <Breadcrumbs items={[{ label: "Contact" }]} className="mb-8" />
-          <Heading level={1} kicker="Get in touch">
+          <Heading level={1}>
             Contact Us
           </Heading>
         </Container>

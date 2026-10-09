@@ -18,7 +18,7 @@ export default function PartnersPage() {
       <Section background="warm" spacing="md">
         <Container>
           <Breadcrumbs items={[{ label: "Partners & Engagements" }]} className="mb-8" />
-          <Heading level={1} kicker="Institution">
+          <Heading level={1}>
             Partners & Engagements
           </Heading>
           <p className="mt-6 max-w-3xl text-lg text-academic-ink-secondary leading-relaxed">

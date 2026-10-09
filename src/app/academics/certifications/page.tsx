@@ -28,7 +28,7 @@ export default function CertificationsPage() {
             ]} 
             className="mb-8" 
           />
-          <Heading level={1} kicker="Professional Credentials">
+          <Heading level={1}>
             Certifications
           </Heading>
           <p className="mt-6 max-w-3xl text-lg text-academic-ink-secondary leading-relaxed">

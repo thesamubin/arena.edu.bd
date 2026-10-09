@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 export interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   level?: 1 | 2 | 3 | 4 | 5 | 6;
   as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "span" | "div";
-  kicker?: string;
   serif?: boolean;
 }
 
@@ -20,7 +19,6 @@ const levelStyles = {
 export function Heading({
   level = 2,
   as,
-  kicker,
   serif = true,
   className,
   children,
@@ -29,22 +27,15 @@ export function Heading({
   const Component = as || (`h${level}` as const);
 
   return (
-    <div className="space-y-1.5">
-      {kicker && (
-        <p className="text-xs font-semibold tracking-wider uppercase text-academic-blue font-sans">
-          {kicker}
-        </p>
+    <Component
+      className={cn(
+        levelStyles[level],
+        serif ? "font-serif" : "font-sans",
+        className
       )}
-      <Component
-        className={cn(
-          levelStyles[level],
-          serif ? "font-serif" : "font-sans",
-          className
-        )}
-        {...props}
-      >
-        {children}
-      </Component>
-    </div>
+      {...props}
+    >
+      {children}
+    </Component>
   );
 }

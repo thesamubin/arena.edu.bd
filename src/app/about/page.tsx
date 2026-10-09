@@ -17,7 +17,7 @@ export default function AboutPage() {
       <Section background="warm" spacing="md">
         <Container>
           <Breadcrumbs items={[{ label: "About" }]} className="mb-8" />
-          <Heading level={1} kicker="Institution">
+          <Heading level={1}>
             About Arena Web Security
           </Heading>
         </Container>

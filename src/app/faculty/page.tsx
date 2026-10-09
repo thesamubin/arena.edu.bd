@@ -18,7 +18,7 @@ export default function FacultyPage() {
       <Section background="warm" spacing="md">
         <Container>
           <Breadcrumbs items={[{ label: "Faculty" }]} className="mb-8" />
-          <Heading level={1} kicker="Academics">
+          <Heading level={1}>
             Our Faculty
           </Heading>
           <p className="mt-6 max-w-3xl text-lg text-academic-ink-secondary leading-relaxed">
