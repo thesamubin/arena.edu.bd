@@ -27,36 +27,43 @@ export function HeroSection() {
       className="relative overflow-hidden border-b border-academic-grey-border"
     >
       {/* Subtle abstract background image - darker and higher contrast */}
-      <div className="absolute inset-0 pointer-events-none opacity-100 mix-blend-multiply contrast-[1.3] brightness-90">
+      {/* Subtle abstract background image - new dark premium image */}
+      <div className="absolute inset-0 pointer-events-none opacity-100">
         <Image
-          src="/images/hero-bg.jpg"
+          src="/images/hero-bg-institute.jpg"
           alt="Abstract architectural mesh background"
           fill
           className="object-cover object-center"
           priority
         />
       </div>
-      <div className="absolute inset-0 pointer-events-none bg-black/10" />
+      
+      {/* Base dark overlay */}
+      <div className="absolute inset-0 pointer-events-none bg-black/50" />
+      
+      {/* Radial gradient to specifically darken the center behind the text */}
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-black/70 via-black/20 to-transparent" />
+      
       {/* Fade out gradient at the bottom so it blends with the next section */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent via-white/50 to-white" />
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-transparent via-academic-navy/20 to-white" />
 
       <Container size="xl" className="relative">
         <div className="max-w-4xl mx-auto flex flex-col items-center text-center space-y-8 py-10 sm:py-16">
           
-          <div className="flex flex-wrap items-center justify-center gap-2">
-            <Badge variant="navy" size="md">
+          <div className="flex flex-wrap items-center justify-center gap-2 animate-[fade-in-up_0.8s_ease-out]">
+            <Badge variant="navy" size="md" className="bg-white/10 backdrop-blur-md border border-white/20 shadow-xl text-white">
               Applied Cybersecurity Institute
             </Badge>
-            <span className="text-xs font-mono text-academic-ink-muted hidden sm:inline">
+            <span className="text-xs font-mono text-white/70 hidden sm:inline drop-shadow-md">
               Est. {INSTITUTION_FOUNDED} · Dhaka
             </span>
           </div>
 
-          <div className="space-y-6">
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-academic-navy tracking-tight leading-[1.1]">
+          <div className="space-y-7 drop-shadow-2xl animate-[fade-in-up_1s_ease-out_0.2s_both]">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-white leading-[1.15] [text-shadow:_0_2px_15px_rgb(0_0_0_/_60%)]">
               Structured Cybersecurity Education Engineered for Practical Defense.
             </h1>
-            <p className="font-sans text-base sm:text-lg md:text-xl text-academic-ink-secondary leading-relaxed max-w-3xl mx-auto">
+            <p className="font-sans text-base sm:text-lg md:text-xl text-white/90 leading-[1.7] max-w-3xl mx-auto font-medium [text-shadow:_0_2px_10px_rgb(0_0_0_/_60%)]">
               {INSTITUTION_NAME} delivers university-level rigor in applied offensive security,
               vulnerability assessment, and defensive engineering. We bridge academic pedagogy 
               with intensive hands-on laboratory practicums.
@@ -64,39 +71,31 @@ export function HeroSection() {
           </div>
 
           {/* Primary & Secondary CTAs */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-            <Button href="/academics" variant="primary" size="lg">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-5 pt-6 animate-[fade-in-up_1s_ease-out_0.4s_both]">
+            <Button 
+              href="/academics" 
+              variant="outline-light"
+              className="group bg-white text-academic-navy hover:bg-white/90 hover:text-academic-navy border-transparent shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300"
+              size="lg"
+            >
               <span>Explore Programs</span>
-              <ArrowRight className="w-4 h-4 ml-1.5" />
+              <ArrowRight className="w-4 h-4 ml-1.5 transition-transform duration-300 group-hover:translate-x-1" />
             </Button>
             <Button
               href="/academics/diploma-cyber-security"
-              variant="secondary"
+              variant="outline-light"
+              className="hover:bg-white/10 transition-all duration-300"
               size="lg"
             >
               <span>Explore the Diploma</span>
             </Button>
           </div>
-
-          {/* Tertiary Institutional Links */}
-          <div className="pt-4 flex flex-wrap justify-center items-center gap-x-6 gap-y-3 text-sm font-medium text-academic-ink-secondary">
-            <Link
-              href="/about"
-              className="hover:text-academic-navy underline underline-offset-4 decoration-academic-grey-border hover:decoration-academic-navy transition-colors inline-flex items-center gap-1.5"
-            >
-              <BookOpen className="w-4 h-4 text-academic-blue" />
-              <span>About the Institute</span>
-            </Link>
-            <span className="hidden sm:inline text-academic-grey-border" aria-hidden="true">
-              •
-            </span>
-            <Link
-              href="/training/corporate"
-              className="hover:text-academic-navy underline underline-offset-4 decoration-academic-grey-border hover:decoration-academic-navy transition-colors inline-flex items-center gap-1.5"
-            >
-              <Building2 className="w-4 h-4 text-academic-blue" />
-              <span>Corporate & Government Training</span>
-            </Link>
+          
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 animate-[bounce_2s_infinite_1s] hidden sm:flex text-white/40">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
           </div>
         </div>
 
