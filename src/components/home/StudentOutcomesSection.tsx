@@ -84,7 +84,7 @@ export function StudentOutcomesSection() {
                 </h3>
                 <p className="text-base text-slate-300 leading-relaxed">
                   Every certificate and diploma issued by Arena Web Security carries a unique serial identifier. 
-                  Employers and HR teams can verify the authenticity of a student's graduation directly through our dedicated portal.
+                  Employers and HR teams can verify the authenticity of a student&apos;s graduation directly through our dedicated portal.
                 </p>
               </div>
               
